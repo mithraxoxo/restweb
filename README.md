@@ -1,5 +1,4 @@
 # Ex.07 Restaurant Website
-## Date:08.02.2025
 
 ## AIM:
 To develop a static Restaurant website to display the food items and services provided by them.
@@ -28,357 +27,463 @@ Validate the HTML code.
 Publish the website in the given URL.
 
 ## PROGRAM:
-```
-
-
-
-contact.html
-
-<html>
+### INDEX.HTML :
+```PY
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Lemon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="index-page">
     <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">About us</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="team.html">Team</a></li>
-            </ul>
-        </nav>
+      <h1>Little Lemon</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="administration.html">Administration</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
     </header>
-</head>
-<body>
+
    
-    <section>
-        <p>Email: rajkumarkpm2006@gmail.com</p>
-        <p>Phone: 9342603456</p>
-        <p>Address:11,sethurayan nagar,kanchipuram</p>
-    </section>
-    <img src="contact us.jpg" width="350px" height="150px" align="left">
-    <footer>
-        <p>By T rajkumar(24004992)</p>
-        <p>All Rights Reserved</p>
-    </footer>
-</body>
-</html>
-
-index.html
-
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Restaurant</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<header>
-    <h1 style="font-family: cursive;"><i>Italiano Restaurant</i></h1>
-    <nav>
-        <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<body>
-   
-    <section id="about">
-        <h2>About Us</h2>
-        <img src="about img.jpg" align="left" width="400px" height="200px">
-        <p>Over 3 Decades, <b>Italiano Restaurant</b> has pioneered Italian cuisine in India. With 50 outlets in 4 countries, we are India’s largest home grown italian brand bringing you a delicious menu of Pizzas, Pastas, Appetizers, Cheeses, Wines & much more.
-
-            Italian food is simple yet sophisticated, using few ingredients to make a dish so flavourful you keep coming back for more. Inspired by Italy’s finest family chefs, we bring you the warmth & love of Italian Cuisine directly to your home.</p>
-    </section>
-    <div class="image-row">
-        
-        <img src="menu1.jpg" alt="Abt" width="420" height="250">
+    <div class="banner">
+      <h2>Welcome to Little Lemon!</h2>
+      <p>Discover the freshest flavors and unique dishes crafted with passion.</p>
+      <p>Enjoy 30% Off This Weekend on selected items!</p>
     </div>
-    
 
+   
+    <div class="main-content">
+      <div class="content-box">
+        <h3>Our New Menu</h3>
+        <p>Explore a range of delicious options made with fresh ingredients.</p>
+        <a href="menu.html">See our new menu</a>
+      </div>
+      <div class="content-box">
+        <h3>Book a Table</h3>
+        <p>Reserve a spot for a memorable dining experience.</p>
+        <a href="book.html">Book your table now</a>
+      </div>
+      <div class="content-box">
+        <h3>Opening Hours</h3>
+        <p>Mon-Fri: 2pm - 10pm<br>Sat: 2pm - 11pm<br>Sun: 2pm - 9pm</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Little Lemon | Developed by V Raksha Dharanika</p>
+    </footer>
+  </div>
 </body>
 </html>
 
 
-menu.html
 
-
-<html>
+```
+### MENU.HTML :
+```PY
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Menu</title>
-    <link rel="stylesheet" href="styles.css">
-    <header>
-        <h1>Our Menu</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">About us</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Lemon</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>  
-    <section>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="lasagna.webp" alt="" width="150">
-                <p>lasagna</p>
-            </div>
-            <div class="menu-item">
-                <img src="Crostata.webp" alt="" width="150">
-                <p>Crostata with Dark Chocolate</p>
-            </div>
-            <div class="menu-item">
-                <img src="Polenta.webp" alt="" width="150">
-                <p>Pork Ragù Over Creamy Polenta</p>
-            </div>
-            <div class="menu-item">
-                <img src="carpese.webp" alt="" width="150">
-                <p>Carpese Salad</p>
-            </div>
-            <div class="menu-item">
-                <img src="stuff.webp" alt="" width="150">
-                <p>Stuffed peppers</p>
-            </div>
-            <div class="menu-item">
-                <img src="old-school-tiramisu.webp" alt="" width="150">
-                <p>Tiramisu</p>
-            </div>
-            <div class="menu-item">
-                <img src="fettuccine-alfredo.webp" alt="" width="150">
-                <p>Fettuccine Alfredo</p>
-            </div>
-            <div class="menu-item">
-                <img src="steak.png" alt="" width="150">
-                <p>Grilled Steak</p>
-            </div>
-            <div class="menu-item">
-                <img src="pasta.png" alt="" width="150">
-                <p>Italian Pasta</p>
-            </div>
-            <div class="menu-item">
-                <img src="marinated-zucchini-with-hazelnuts-and-ricotta.webp" alt="" width="150">
-                <p>Marinated Zucchi</p>
-            </div>
-            <div class="menu-item">
-                <img src="20221013-1222-13257-AOTT.webp" alt="" width="150">
-                <p>Cuccinati</p>
-            </div>
-            <div class="menu-item">
-                <img src="panna-cotta-with-cherries-and-lemon.webp" alt="" width="150">
-                <p>Panna Cotta</p>
-            </div>
-        </div>        
-    </section>
-</body>
-</html>
-
-
-team.html
-
-
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<header>
-    <h1 style="font-family: cursive;"><i>Our Team</i></h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">About us</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
 <body>
-    
-    <section>
-        <div class="team">
-            <div class="team-member">
-                <img src="myphoto.jpg" alt="Owner" class="team-img">
-                <p><b>T Rajkumar</b></p>
-                <p>Manager</p>
-            </div>
-            <div class="team-member">
-                <img src="bezos.jpg" alt="Oops" class="team-img">
-                <p><b>Jeff Bezos</b></p>
-                <p>Head Chef </p>
-            </div>
-            <div class="team-member">
-                <img src="elonmusk.jpg" alt="Oops" class="team-img">
-                <p><b>Elon musk</b></p>
-                <p>Cashier</p>
-            </div>
-            <div class="team-member">
-                <img src="waiter1.jpg" alt="W" class="team-img">
-                <p><b>Smith</b></p>
-                <p>Waiter</p>
-            </div>
-            <div class="team-member">
-                <img src="waiter 2.jpg" alt="W" class="team-img">
-                <p><b>Jack</b></p>
-                <p>Table cleaner</p>
-            </div>
-            <div class="team-member">
-                <img src="billgates.jpg" alt="Microsoft" class="team-img">
-                <p><b>Gates</b></p>
-                <p>Assistant(Micro) chef</p>
-            </div>
-        </div>
-    </section>
+  <!-- Main Page Container with Background -->
+  <div class="index-page">
+    <header>
+      <h1>Little Lemon</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="administration.html">Administration</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <div class="banner">
+      <h2>Welcome to Little Lemon!</h2>
+      <p>Discover the freshest flavors and unique dishes crafted with passion.</p>
+      <p>Enjoy 30% Off This Weekend on selected items!</p>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <div class="content-box">
+        <h3>Our New Menu</h3>
+        <p>Explore a range of delicious options made with fresh ingredients.</p>
+        <a href="menu.html">See our new menu</a>
+      </div>
+      <div class="content-box">
+        <h3>Book a Table</h3>
+        <p>Reserve a spot for a memorable dining experience.</p>
+        <a href="book.html">Book your table now</a>
+      </div>
+      <div class="content-box">
+        <h3>Opening Hours</h3>
+        <p>Mon-Fri: 2pm - 10pm<br>Sat: 2pm - 11pm<br>Sun: 2pm - 9pm</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Little Lemon | Developed by V Raksha Dharanika</p>
+    </footer>
+  </div>
 </body>
 </html>
 
 
+```
+### ADMINISTRATION.HTML :
 
-style.css
+```PY
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Lemon</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  
+    body {
+      background-color: lightgrey;
+      color: black;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .index-page {
+      background-color: white;
+      padding: 20px;
+    }
+
+    header {
+      background-color: darkgreen;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      color: lightyellow;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: yellow;
+    }
+
+   
+    .banner {
+      background-color: tomato;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+   
+    .main-content {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .content-box {
+      background-color: lightblue;
+      padding: 20px;
+      border: 2px solid darkblue;
+      border-radius: 8px;
+      text-align: center;
+      width: 25%;
+    }
+
+    .content-box h3 {
+      color: darkblue;
+    }
+
+    .content-box a {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: darkslategrey;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="index-page">
+    <header>
+      <h1>Little Lemon</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="administration.html">Administration</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+ 
+    <div class="banner">
+      <h2>Welcome to Little Lemon!</h2>
+      <p>Discover the freshest flavors and unique dishes crafted with passion.</p>
+      <p>Enjoy 30% Off This Weekend on selected items!</p>
+    </div>
+
+   
+    <div class="main-content">
+      <div class="content-box">
+        <h3>Our New Menu</h3>
+        <p>Explore a range of delicious options made with fresh ingredients.</p>
+        <a href="menu.html">See our new menu</a>
+      </div>
+      <div class="content-box">
+        <h3>Book a Table</h3>
+        <p>Reserve a spot for a memorable dining experience.</p>
+        <a href="book.html">Book your table now</a>
+      </div>
+      <div class="content-box">
+        <h3>Opening Hours</h3>
+        <p>Mon-Fri: 2pm - 10pm<br>Sat: 2pm - 11pm<br>Sun: 2pm - 9pm</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Little Lemon | Developed by V Raksha Dharanika</p>
+    </footer>
+  </div>
+</body>
+</html>
+
+```
+### CONTACT.HTML :
+```PY
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Lemon - Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Little Lemon</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="administration.html">Administration</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <h2><center> Contact Us  </center></h2>
+  <p><center>   Address: 123 Main Street, velachery, India</center></p>
+  <p><center>  Phone: 8939003166   </center></p>
+  <p><center>    Email: rakshadharanika@gmai.com </center></p>
+
+  <footer>
+    <p>&copy; 2024 Little Lemon | Developed by V Raksha Dharanika</p>
+  </footer>
+</body>
+</html>
 
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.9;
-    font-size: large;
-    background-image:url(bg3.jpg);
-    background-size: cover; 
+```
+### STYLE.CSS:
+```PY
+
+
+.index-page {
+    background-image: url('images/WhatsApp\ Image\ 2024-11-13\ at\ 20.45.09_f80c0a9c.jpg'); 
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
-    height: 100vh;
-    color: rgb(213, 215, 222);
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    color: white;
+    min-height: 100vh; 
 }
 
 
 header {
-    background-image:url(bg2.avif) ; 
-    color: rgb(246, 240, 245);
-    padding: 10px 0;
     text-align: center;
-    font-style: oblique;
-    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 8px;
 }
 
+header h1 {
+    font-size: 2em;
+    color: lightgoldenrodyellow;
+}
 
-
-nav ul li {
-    display: inline;
+header nav a {
     margin: 0 15px;
-}
-
-nav ul li a {
-    color: rgb(241, 17, 17);
+    color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: larger;
 }
 
-section {
+header nav a:hover {
+    color: lightcoral;
+}
+
+
+.banner {
+    text-align: center;
     padding: 20px;
-    margin: 30px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 8px;
 }
 
+.banner h2 {
+    font-size: 2.5em;
+    color: gold;
+}
+
+.banner p {
+    font-size: 1.2em;
+    color: white;
+}
+
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.content-box {
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: dimgray;
+    width: 30%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.content-box h3 {
+    font-size: 1.5em;
+    color: darkgreen;
+}
+
+.content-box p {
+    font-size: 1em;
+    color: gray;
+}
+
+.content-box a {
+    text-decoration: none;
+    font-weight: bold;
+    color: orangered;
+}
+
+.content-box a:hover {
+    color: darkred;
+}
 
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #373d2d;
-    color: rgb(153, 136, 136);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    
-
-    
+    margin-top: 50px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 8px;
+    color: white;
+}
+.menu-page {
+    background-image: url('your-menu-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white;
 }
 
-.menu-grid {
+
+.menu-items {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    margin: 20px auto;
+    margin-top: 20px;
+}
+
+
+.menu-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: dimgray;
 }
 
 .menu-item img {
-    width: 150px;
-    height: 150px; 
-    object-fit: cover; 
-    border: 2px solid #fff; 
-    border-radius: 5px; 
-    display: block; 
-    margin: 0 auto; 
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+    font-size: 1.3em;
+    color: tomato;
 }
 
 .menu-item p {
-    margin-top: 10px; 
-    font-size: 17px; 
-    color: #c7ecde; 
-    font-weight: 800;
+    font-size: 0.9em;
+    color: gray;
 }
 
-.team {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; 
-    gap: 75x; 
-    margin: 10px auto;
-    max-width: 1200px; 
+.menu-item p:last-of-type {
+    font-weight: bold;
+    color: black;
 }
 
-.team-member {
-    text-align:center;
-    width: 200px; 
-}
 
-.team-img {
-    width: 150px; 
-    height: 150px; 
-    object-fit: cover; 
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
 
-.team-member p {
-    margin: 5px 0;
-    font-size: 24px;
-    color: #fcf3f3;
-}
-.image-row {
-    display: flex; 
-    justify-content: center; 
-    gap: 25px;
-    margin: 20px 0; 
-}
-
-.image-row img {
-    border: 6px solid #0a0a0a; 
-    border-radius: 20px; 
-}
 
 
 ```
 
 
 ## OUTPUT:
-![alt text](<Screenshot (64).png>)
- ![alt text](<Screenshot (65).png>) 
- ![alt text](<Screenshot (66).png>) 
- ![alt text](<Screenshot (67).png>)
+### INDEX.HTML :
+![image](https://github.com/user-attachments/assets/c2e44d63-10be-4af1-97d2-483e0dd8c753)
+
+
+### MENU.HTML :
+![image](https://github.com/user-attachments/assets/9965f8b3-c20c-42f5-9eb4-885607fc868f)
+
+### ADMINISTRATION.HTML :
+![image](https://github.com/user-attachments/assets/a83ef917-79ca-431c-9a95-cf9bd6d4caac)
+
+### CONTACT.HTML :
+![image](https://github.com/user-attachments/assets/6845c508-e475-4fb5-b2ce-822650aa96ad)
+
+
 
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
